@@ -54,6 +54,10 @@ const Game = () => {
     }
   };
 
+  const skipWord = () => {
+    giveWord();
+  };
+
   return (
     <>
       <div className="bg-[#D9D9D9]">
@@ -78,6 +82,7 @@ const Game = () => {
               />
             </form>
             <h2>Words done: {score}</h2>
+            <button onClick={skipWord}>SKIP</button>
           </div>
         )}
       </div>
