@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import BackButton from "../BackButton/BackButton";
 import LoginButton from "../LoginButton/LoginButton";
 import { motion } from "framer-motion";
+import collection from "easter-egg-collection";
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -76,7 +77,7 @@ const Menu = () => {
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
               onClick={() => navigate("/identifyform")}
             >
-              Body parts
+              Which tense?
             </button>
             <button
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
