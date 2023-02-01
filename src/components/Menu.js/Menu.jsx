@@ -74,7 +74,7 @@ const Menu = () => {
             </button>
             <button
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
-              onClick={() => handleClick("bodyParts")}
+              onClick={() => navigate("/identifyform")}
             >
               Body parts
             </button>

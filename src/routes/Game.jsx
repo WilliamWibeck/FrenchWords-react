@@ -14,7 +14,7 @@ const Game = () => {
 
   const giveWord = () => {
     let currentWord = wordlist[Math.floor(Math.random() * wordlist.length)];
-    console.log(currentWord);
+
     setWord(currentWord);
   };
 
