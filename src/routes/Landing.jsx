@@ -2,17 +2,29 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Menu from "../components/Menu.js/Menu";
+import Typewriter from "typewriter-effect";
 
 const Landing = () => {
   const [toggle, setToggle] = useState(false);
-  /* const underscore = "_"; */
-  const welcometext = "Welcome to WordGrinder!";
 
   return (
-    <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-5 items-center justify-center font-light">
-      <h1 className="text-6xl ">
-        {welcometext}
-        {/* {underscore} */}
+    <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-8 items-center justify-center font-light">
+      <h1 className="text-7xl font-mono">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Welcome to WordGrinder!")
+
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString("Made to help expand your vocabulary.")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Lets get started!")
+
+              .start();
+          }}
+        />
       </h1>
       <Link
         to="/menu"

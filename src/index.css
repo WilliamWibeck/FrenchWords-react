@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
 @font-face {
   font-family: "Light"; /*Can be any text*/
   src: local("Poppins"),
     url("../assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "medium";
+  src: local("TypeWriter"),
+    url("../assets/fonts/Type Machine.ttf") format("truetype");
 }
