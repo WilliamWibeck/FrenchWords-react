@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import BackButton from "../../components/BackButton/BackButton";
 import LoginButton from "../../components/LoginButton/LoginButton";
+import { motion } from "framer-motion";
 
 const IdentifyForm = () => {
   const [sentence, setSentence] = useState("");
@@ -58,10 +59,8 @@ const IdentifyForm = () => {
           <LoginButton />
         </div>
       </div>
-      <div className="h-screen flex flex-col items-center justify-center gap-10 select-none">
-        <h1 className="text-8xl">
-          {noWordLeft}'{sentence.sentence}'
-        </h1>
+      <div className="h-screen flex bg-[#D9D9D9] flex-col items-center justify-center gap-10 select-none">
+        <h1 className="text-8xl ">'{sentence.sentence}'</h1>
         <div className="gap-14 flex flex-row text-white text-3xl font-medium">
           <button
             className="bg-[#CDCDCD] rounded-lg h-28 w-36 hover:bg-purple-700 transition ease-in-out duration-400"

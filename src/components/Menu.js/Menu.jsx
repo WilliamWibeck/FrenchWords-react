@@ -23,14 +23,10 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+      <motion.div>
         <div className="flex flex-col items-center justify-center bg-[#CDCDCD] rounded-lg ">
           <h1 className="text-3xl p-1.5 text-[#5A5A5A]">Categories</h1>
-          <div className="grid-cols-3 grid gap-2  h-96 w-96 rounded-xl items-center justify-center p-2">
+          <div className="grid-cols-3 grid gap-2 text-2xl h-96 w-96 rounded-xl items-center justify-center p-2">
             <button
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
               onClick={() => handleClick("months")}
@@ -77,7 +73,7 @@ const Menu = () => {
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
               onClick={() => navigate("/identifyform")}
             >
-              Which tense?
+              Tenses
             </button>
             <button
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"

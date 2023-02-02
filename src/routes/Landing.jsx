@@ -14,14 +14,14 @@ const Landing = () => {
       () => {
         setShowButton(true);
       },
-      21000,
+      1000,
       []
     );
   });
 
   return (
     <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-8 items-center justify-center font-light select-none">
-      <h1 className="text-7xl font-mono">
+      <h1 className="text-7xl font-mono ">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
