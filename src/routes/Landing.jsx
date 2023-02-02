@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Menu from "../components/Menu.js/Menu";
 import Typewriter from "typewriter-effect";
+import GetStartedButton from "../components/GetStartedButton/GetStartedButton";
 
 const Landing = () => {
   const [toggle, setToggle] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    setTimeout(
+      () => {
+        setShowButton(true);
+      },
+      21000,
+      []
+    );
+  });
 
   return (
     <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-8 items-center justify-center font-light select-none">
@@ -17,7 +29,11 @@ const Landing = () => {
 
               .pauseFor(1500)
               .deleteAll()
-              .typeString("Made to help expand your vocabulary.")
+              .typeString("Made to help expand my voca")
+              .pauseFor(300)
+              .deleteChars(7)
+              .pauseFor(100)
+              .typeString("your vocabulary.")
               .pauseFor(1000)
               .deleteAll()
               .typeString("Lets get started!")
@@ -26,12 +42,7 @@ const Landing = () => {
           }}
         />
       </h1>
-      <Link
-        to="/menu"
-        className="bg-[#FBFBF1] p-4 shadow-md text-lg font-semibold hover:scale-105 transition ease-in-out"
-      >
-        Get Started!
-      </Link>
+      <div className="h-48">{showButton && <GetStartedButton />}</div>
       {toggle && <Menu />}
     </div>
   );
