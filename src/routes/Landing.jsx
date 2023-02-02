@@ -42,7 +42,7 @@ const Landing = () => {
           }}
         />
       </h1>
-      <div className="h-48">{showButton && <GetStartedButton />}</div>
+      <div className="">{showButton && <GetStartedButton />}</div>
       {toggle && <Menu />}
     </div>
   );
