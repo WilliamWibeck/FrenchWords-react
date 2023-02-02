@@ -12,7 +12,7 @@ const Game = () => {
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
 
-  const irrelevantWord = "";
+  const irrelevantWord = "hej";
 
   const giveWord = () => {
     let currentWord = wordlist[Math.floor(Math.random() * wordlist.length)];
