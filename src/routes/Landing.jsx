@@ -8,7 +8,7 @@ const Landing = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-8 items-center justify-center font-light">
+    <div className="screen-bg h-screen bg-[#D9D9D9] w-vw flex flex-col gap-8 items-center justify-center font-light select-none">
       <h1 className="text-7xl font-mono">
         <Typewriter
           onInit={(typewriter) => {
