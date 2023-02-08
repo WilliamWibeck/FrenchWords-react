@@ -14,7 +14,7 @@ const Landing = () => {
       () => {
         setShowButton(true);
       },
-      21000,
+      22000,
       []
     );
   });

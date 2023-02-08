@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { months, animals, allWords, clothing, weather } from "../data/wordlist";
+import {
+  months,
+  animals,
+  allWords,
+  clothing,
+  weather,
+  weekdays,
+} from "../data/wordlist";
 import { useNavigate } from "react-router-dom";
 import BackButton from "../components/BackButton/BackButton";
 import LoginButton from "../components/LoginButton/LoginButton";
@@ -12,17 +19,8 @@ const Game = () => {
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
 
-  const irrelevantWord = "hej";
-
-  /*  const giveWord = () => {
-    let currentWord = wordlist[Math.floor(Math.random() * wordlist.length)];
-
-    setWord(currentWord);
-  };
- */
   const giveWord = () => {
-    let unfilteredWordList = wordlist;
-    let filteredWordList = unfilteredWordList.filter((words) => {
+    let filteredWordList = wordlist.filter((words) => {
       return words.answered == false;
     });
     let currentWord =
@@ -47,6 +45,9 @@ const Game = () => {
       case "weather":
         setWordlist(weather);
         break;
+      case "weekdays":
+        setWordlist(weekdays);
+        break;
 
       default:
         navigate("/menu");
@@ -60,7 +61,9 @@ const Game = () => {
 
   const handleChange = (e) => {
     if (e.target.value == word.translation) {
-      word.answered = true;
+      const index = wordlist.findIndex((el) => el.word === word.word);
+      wordlist[index].answered = true;
+      console.log(wordlist);
       console.log(word.answered);
       setScore(score + 1);
       e.target.value = "";
@@ -86,7 +89,7 @@ const Game = () => {
             </h2>
 
             <h1 className="text-8xl p-5">{word.word}</h1>
-            <form method="post">
+            <form onSubmit={(e) => e.preventDefault()}>
               <input
                 placeholder="Enter word"
                 type="text"

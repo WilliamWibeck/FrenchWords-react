@@ -149,6 +149,22 @@ export const allWords = [
   { word: "Boxer short", translation: "boxer short", answered: false },
   { word: "Undershirt", translation: "maillot de corps", answered: false },
   { word: "Underwear(m)", translation: "calecon", answered: false },
+  { word: "It's nice out", translation: "il fait beau", answered: false },
+  { word: "It's hot out", translation: "il fait chaud", answered: false },
+  { word: "It's cold out", translation: "il fait froid", answered: false },
+  { word: "It's bad weather", translation: "il fait mauvais", answered: false },
+  { word: "It's humid out", translation: "il fait humide", answered: false },
+  { word: "It's cloudy out", translation: "il fait nuageux", answered: false },
+  { word: "It's stormy out", translation: "il fait orageux", answered: false },
+  { word: "It's sunny out", translation: "il fait du soleil", answered: false },
+  { word: "It's raining", translation: "il pleut", answered: false },
+  {
+    word: "It's pouring out",
+    translation: "il pleut à verse",
+    answered: false,
+  },
+  { word: "It's snowing", translation: "il neige", answered: false },
+  { word: "It's freezing", translation: "il gèle", answered: false },
 ];
 
 export const clothing = [
@@ -186,4 +202,31 @@ export const clothing = [
   { word: "Underwear(m)", translation: "calecon", answered: false },
 ];
 
-export const weather = [{ word: "It's nice out", translation: "il fait beau" }];
+export const weather = [
+  { word: "It's nice out", translation: "il fait beau", answered: false },
+  { word: "It's hot out", translation: "il fait chaud", answered: false },
+  { word: "It's cold out", translation: "il fait froid", answered: false },
+  { word: "It's bad weather", translation: "il fait mauvais", answered: false },
+  { word: "It's humid out", translation: "il fait humide", answered: false },
+  { word: "It's cloudy out", translation: "il fait nuageux", answered: false },
+  { word: "It's stormy out", translation: "il fait orageux", answered: false },
+  { word: "It's sunny out", translation: "il fait du soleil", answered: false },
+  { word: "It's raining", translation: "il pleut", answered: false },
+  {
+    word: "It's pouring out",
+    translation: "il pleut à verse",
+    answered: false,
+  },
+  { word: "It's snowing", translation: "il neige", answered: false },
+  { word: "It's freezing", translation: "il gèle", answered: false },
+];
+
+export const weekdays = [
+  { word: "Monday", translation: "lundi", answered: false },
+  { word: "Tuesday", translation: "mardi", answered: false },
+  { word: "Wednesday", translation: "mercredi", answered: false },
+  { word: "Thursday", translation: "jeudi", answered: false },
+  { word: "Friday", translation: "vendredi", answered: false },
+  { word: "Saturday", translation: "samedi", answered: false },
+  { word: "Sunday", translation: "dimanche", answered: false },
+];

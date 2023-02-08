@@ -23,7 +23,11 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1.2 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="flex flex-col items-center justify-center bg-[#CDCDCD] rounded-lg ">
           <h1 className="text-3xl p-1.5 text-[#5A5A5A]">Categories</h1>
           <div className="grid-cols-3 grid gap-2 text-2xl h-96 w-96 rounded-xl items-center justify-center p-2">
@@ -65,7 +69,7 @@ const Menu = () => {
             </button>
             <button
               className="bg-[#D9D9D9] h-full rounded-xl hover:bg-gray-200"
-              onClick={() => handleClick("countries")}
+              onClick={() => navigate("/translateparagraph")}
             >
               Countries
             </button>
