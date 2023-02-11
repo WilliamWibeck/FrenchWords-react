@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import Menu from "../components/Menu.js/Menu";
 import Typewriter from "typewriter-effect";
 import GetStartedButton from "../components/GetStartedButton/GetStartedButton";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const [toggle, setToggle] = useState(false);
   const [showButton, setShowButton] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(
@@ -44,6 +46,12 @@ const Landing = () => {
       </h1>
       <div className="">{showButton && <GetStartedButton />}</div>
       {toggle && <Menu />}
+      <button
+        className="absolute bottom-0 text-xl font-medium py-3"
+        onClick={() => navigate("/menu")}
+      >
+        Skip
+      </button>
     </div>
   );
 };
