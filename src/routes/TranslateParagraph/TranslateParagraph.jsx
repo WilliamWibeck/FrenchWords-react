@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Button } from "react-onsenui";
+import { paragraphs } from "../../data/paragraphlist";
 
 const TranslateParagraph = () => {
+  let paragraphtest = paragraphs;
+
+  const [currentword, setCurrentWord] = useState("");
+
   return (
     <div className="bg-[#D9D9D9] h-screen">
       <div className="flex flex-col gap-64">
         <div id="upperScreen" className="flex flex-col">
           <div id="paragraphBox" className="">
             <div className="h-96 max-w-[50%]">
+              <Button></Button>
+              <p>{currentword}</p>
               <form onSubmit={(e) => e.preventDefault()}>
                 <textarea
                   rows="5"

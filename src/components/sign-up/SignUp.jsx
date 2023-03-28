@@ -56,9 +56,12 @@ const SignUp = () => {
 
   return (
     <div className="text-black flex items-center ">
-      <div className="bg-transparent border-solid border-2 rounded-md max-w-[700px] border-black shadow-md h-[700px¨] items-center flex flex-col p-10 gap-20">
-        <h1 className="text-xl">Sign up!</h1>
-        <form className="flex gap-3 flex-col text-xl" onSubmit={handleSubmit}>
+      <div className="bg-transparent border-solid border-2  max-w-[700px] border-black shadow-md h-[700px¨] items-center flex flex-col p-10 gap-20">
+        <h1 className="text-[64px] 2">Sign up!</h1>
+        <form
+          className="flex gap-3 flex-col text-xl bg-transparent"
+          onSubmit={handleSubmit}
+        >
           <FormInput
             type="text"
             required
@@ -66,6 +69,7 @@ const SignUp = () => {
             name="displayName"
             value={displayName}
             placeHolder="Name"
+            className="bg-transparent border-b-2 border-black placeholder-black text-center"
           />
           <FormInput
             type="email"
@@ -74,6 +78,7 @@ const SignUp = () => {
             name="email"
             value={email}
             placeHolder="Email"
+            className="bg-transparent border-b-2 border-black placeholder-black text-center"
           />
           <FormInput
             type="password"
@@ -82,6 +87,7 @@ const SignUp = () => {
             name="password"
             value={password}
             placeHolder="Password"
+            className="bg-transparent border-b-2 border-black placeholder-black text-center"
           />
           <FormInput
             type="password"
@@ -90,6 +96,7 @@ const SignUp = () => {
             name="confirmPassword"
             value={confirmPassword}
             placeHolder="Confirm Password"
+            className="bg-transparent border-b-2 border-black placeholder-black text-center"
           />
 
           <div className="flex items-center justify-center">

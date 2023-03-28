@@ -1,3 +1,1 @@
-export const paragraphs = [
-  { word: "test test test test test", translation: "test test test test test" },
-];
+export const paragraphs = ["C'est", "maintenant", "qu'il"];

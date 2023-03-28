@@ -5,6 +5,7 @@ import SignIn from "../components/sign-in/SignIn";
 import BackButton from "../components/BackButton/BackButton";
 import LoginButton from "../components/LoginButton/LoginButton";
 import { motion } from "framer-motion";
+import MenuUpdated from "../components/Menu.js/MenuUpdated";
 
 const Authentication = () => {
   return (
@@ -20,7 +21,6 @@ const Authentication = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="h-screen w-screen flex gap-48 flex-row items-center justify-center">
-            {/* <SignIn /> */}
             <SignUp />
           </div>
         </motion.div>

@@ -13,12 +13,21 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.7",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "@react-three/fiber": "^8.12.0",
+    "@types/three": "^0.149.0",
     "firebase": "^9.16.0",
     "framer-motion": "^8.5.5",
+    "onsenui": "^2.12.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hover-video-player": "^10.0.0",
+    "react-onsenui": "^1.13.2",
+    "react-player": "^2.12.0",
     "react-router-dom": "^6.8.0",
-    "typewriter-effect": "^2.19.0"
+    "three": "^0.150.1",
+    "typewriter-effect": "^2.19.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

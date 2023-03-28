@@ -4,6 +4,7 @@ import BackButton from "../BackButton/BackButton";
 import LoginButton from "../LoginButton/LoginButton";
 import { motion } from "framer-motion";
 import collection from "easter-egg-collection";
+import { Button } from "@nextui-org/react";
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -16,7 +17,14 @@ const Menu = () => {
       <div className="flex w-100vw">
         <div className="">
           <div className="left-1 top-1 absolute">
-            <BackButton />
+            <button
+              className="text-2xl p-1"
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
+              Back
+            </button>
           </div>
           <div className="right-1 absolute top-1">
             <LoginButton />
